@@ -1,0 +1,4 @@
+notifd
+org_freedesktop_notifications.h
+*.o
+*.gch
