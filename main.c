@@ -58,9 +58,10 @@ static void method_callback(GDBusConnection *connection, const gchar *sender, co
 	} else if (strcmp(method_name, "GetCapabilities") == 0) {
 		DEBUG("'GetCapabilities' method called");
 
-		// https://specifications.freedesktop.org/notification-spec/notification-spec-latest.html#commands
+		// https://specifications.freedesktop.org/notification-spec/latest/protocol.html
 		const gchar *capabilities[] = {
 			//"action-icons",
+			//"actions",
 			"body",
 			"body-hyperlinks",
 			//"body-images",
